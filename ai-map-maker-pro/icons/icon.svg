@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="url(#g)"/>
+  <!-- Simplified map pin + compass -->
+  <path d="M32 14c-7 0-12 5-12 12 0 9 12 22 12 22s12-13 12-22c0-7-5-12-12-12z"
+        fill="#FFF" stroke="#1E3A8A" stroke-width="2"/>
+  <circle cx="32" cy="26" r="4" fill="#2563EB"/>
+  <!-- Claude-C glyph in corner -->
+  <text x="48" y="56" text-anchor="middle" font-family="Georgia, serif"
+        font-size="14" font-weight="bold" fill="#FFF">C</text>
+</svg>

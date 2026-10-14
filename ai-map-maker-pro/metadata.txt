@@ -1,0 +1,33 @@
+[general]
+name=Claude AI Map Maker Pro
+qgisMinimumVersion=3.34
+qgisMaximumVersion=4.99
+description=AI-powered map creation for QGIS. Build maps from plain English, ingest CSV/Excel/KML/KMZ, scan PDFs and images for map features, generate DEMs, and export with legends.
+about=Uses the Anthropic Claude API to plan, source and style maps automatically. Supports OSM, Natural Earth, XYZ basemaps, SRTM/AWS elevation tiles, natural-language queries, file uploads, and Claude Vision-powered document scanning for map replication.
+version=2.1.1
+author=Prahlad Pratap Singh
+email=pssinghfm27@iifmbhopal.edu.in
+category=Plugins
+tags=ai,claude,anthropic,map,mapping,osm,openstreetmap,natural earth,dem,elevation,vision,kml,kmz,csv,strike,dip,geology,springshed,automation
+icon=icons/icon.svg
+experimental=False
+deprecated=False
+homepage=
+tracker=
+repository=
+changelog=2.1.1 - Fix: use qgis.PyQt for all Qt imports. QGIS 4.0's Qt6-based
+        build actively blocks PyQt5 imports even as fallbacks, which broke
+        the previous try-PyQt6/except-PyQt5 pattern. Also fixed QAction path
+        (moved from QtWidgets to QtGui in PyQt6).
+       2.1.0 - Added Rock beds tab: strike/dip plane projection from the
+        Peepalkhola paper. Vision scanner now extracts strike_dip_observations
+        from geological maps.
+       2.0.0 - Complete rewrite. QGIS 4/PyQt6 primary with 3.x compat.
+        - Fixed OSM relations (forests, rivers, admin boundaries now render).
+        - Natural Earth bbox clipping via setSubsetString.
+        - Working DEM via AWS Terrain Tiles and OpenTopography.
+        - CSV/Excel/KML/KMZ file ingest with coordinate auto-detection.
+        - Claude Vision PDF/image scanner: extract features AND georeference.
+        - Model selection (Opus 4.7 / Sonnet 4.6 / Haiku 4.5) with prompt caching.
+        - Print layout export with legend, scale bar, north arrow.
+        - Thread-safe across all QGIS operations.

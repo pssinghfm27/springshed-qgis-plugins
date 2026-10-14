@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="url(#g)"/>
+  <!-- Rock bed tilt: a parallelogram tilted to suggest a dipping bed -->
+  <path d="M12 42 L44 22 L52 32 L20 52 Z" fill="#FFF" opacity="0.95"
+        stroke="#1F2937" stroke-width="1.2"/>
+  <path d="M16 46 L46 26" stroke="#9CA3AF" stroke-width="0.8" fill="none"/>
+  <path d="M22 50 L50 30" stroke="#9CA3AF" stroke-width="0.8" fill="none"/>
+  <!-- Dip arrow -->
+  <path d="M42 16 L52 26 L47 28 L50 32" stroke="#FFF" stroke-width="2"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="51,33 54,28 46,29" fill="#FFF"/>
+</svg>

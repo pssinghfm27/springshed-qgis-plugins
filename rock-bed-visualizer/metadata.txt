@@ -1,0 +1,22 @@
+[general]
+name=Rock Bed Visualizer
+qgisMinimumVersion=3.34
+qgisMaximumVersion=4.99
+description=Project rock-bed planes from strike/dip observations using the Peepalkhola paper's method. Offline. No API keys. Works per-feature (batch) or single-bed.
+about=Implements the math from "Visualizing Strikes and Dips of Rock Beds in QGIS with qgis2threejs" (CHIRAG / Dotiyalgaon). Given a rock observation point or a table of observations with strike, dip direction and dip amount, this plugin builds a regular point grid or a 3D polygon that represents the projected rock-bed plane through each origin. Outputs a z-attribute suitable for qgis2threejs and the native QGIS 3D map view. Entirely offline - no network, no API keys, no Claude, no tile servers.
+version=1.0.0
+author=Prahlad Pratap Singh
+email=pssinghfm27@iifmbhopal.edu.in
+category=Plugins
+tags=geology,strike,dip,rock bed,springshed,recharge,3d,qgis2threejs,offline,peepalkhola,chirag
+icon=icons/icon.svg
+experimental=False
+deprecated=False
+homepage=
+tracker=
+repository=
+changelog=1.0.0 - Initial release. Single-bed mode (manual angles) and
+        batch mode (read strike/dip/origin from a layer's attribute table).
+        Output as point grid with z, or 3D polygon plane, or both.
+        Canvas-pick origin, layer-feature origin, or per-row origin.
+        Offline only - no external dependencies.

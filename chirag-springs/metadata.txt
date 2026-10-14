@@ -1,0 +1,29 @@
+[general]
+name=CHIRAG-Springs
+qgisMinimumVersion=3.22
+description=Comprehensive Hydrogeological Intervention and Recharge Analysis for Groundwater — structural geology T-symbol plotting, intervention mapping, GSI cross-verification, and predictive recharge-zone modeling.
+version=1.0.0
+author=CHIRAG Springshed Project
+email=pssinghfm27@iifmbhopal.edu.in
+
+about=CHIRAG-Springs ingests hydrogeological field survey data from the custom CHIRAG Springshed mobile app (CSV/Excel) and conventional field sheets. It provides:\n  • Automated geological "T" symbol plotting with data-defined strike/dip rotation\n  • Structural intervention mapping with categorized symbology for PPT, CT, DRP, LBCD, CCT, Gabion, RWHS, and more\n  • Cross-checking engine that flags field measurements deviating >15° from regional GSI structural trends\n  • Predictive recharge-zone wedge polygons computed from up-dip vectors with dip-amount-scaled footprints
+
+tracker=https://github.com/pssinghfm27/springshed-qgis-plugins/issues
+repository=https://github.com/pssinghfm27/springshed-qgis-plugins
+
+hasProcessingProvider=no
+
+tags=hydrogeology,structural geology,springs,recharge zone,dip,strike,groundwater,intervention,springshed,geology
+
+homepage=https://github.com/pssinghfm27/springshed-qgis-plugins
+category=Plugins
+icon=icon.png
+
+experimental=False
+deprecated=False
+
+changelog=
+    1.0.0 — Initial release
+        • Tab 1: Structural T-symbol plotting from CSV/Excel field data
+        • Tab 2: Intervention symbology mapping from Excel/KML
+        • Tab 3: GSI cross-verification and predictive recharge-zone polygons
